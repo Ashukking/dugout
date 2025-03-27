@@ -8,7 +8,7 @@ import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import { 
   Trophy, 
-  Ball, 
+  Dumbbell, 
   Activity, 
   Music, 
   Utensils, 
@@ -34,7 +34,7 @@ const Index = () => {
     {
       title: "Football Field",
       description: "Indoor 5-a-side football pitches with artificial turf and professional lighting.",
-      icon: <Ball className="h-5 w-5 text-white" />,
+      icon: <Dumbbell className="h-5 w-5 text-white" />,
       color: "#2196F3",
       image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
