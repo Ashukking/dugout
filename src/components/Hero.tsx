@@ -49,8 +49,8 @@ const Hero = () => {
             
             {/* Floating Activity Cards with enhanced animations */}
             <div className="absolute -top-4 -left-4 glass-card p-2 rounded-lg shadow-lg animate-float gradient-border" style={{ animationDelay: '0.2s' }}>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-sport-cricket flex items-center justify-center animate-pulse-soft">
+              <div className="flex items-center gap-2 text-sport-pickleball">
+                <div className="w-8 h-8 rounded-full bg-sport-pickleball flex items-center justify-center animate-pulse-soft">
                   <span className="text-white font-bold text-xs">🏏</span>
                 </div>
                 <span className="font-medium text-sm">Cricket</span>
