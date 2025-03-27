@@ -7,8 +7,8 @@ import Features from '@/components/Features';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import { 
-  Cricket, 
-  Football, 
+  Trophy, 
+  BadmintonIcon, 
   Activity, 
   Music, 
   Utensils, 
@@ -20,7 +20,7 @@ const Index = () => {
     {
       title: "Cricket Arena",
       description: "Professional indoor cricket pitches with automated bowling machines and scoring systems.",
-      icon: <Cricket className="h-5 w-5 text-white" />,
+      icon: <Trophy className="h-5 w-5 text-white" />,
       color: "#4CAF50",
       image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
@@ -34,7 +34,7 @@ const Index = () => {
     {
       title: "Football Field",
       description: "Indoor 5-a-side football pitches with artificial turf and professional lighting.",
-      icon: <Football className="h-5 w-5 text-white" />,
+      icon: <BadmintonIcon className="h-5 w-5 text-white" />,
       color: "#2196F3",
       image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
