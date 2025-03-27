@@ -97,22 +97,22 @@ const Index = () => {
       
       {/* Activities Section */}
       <section id="activities" className="section-padding relative overflow-hidden">
-        {/* Background gradient circles */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-sport-pickleball/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-sport-trampoline/20 rounded-full blur-3xl"></div>
+        {/* Enhanced background gradient circles with animation */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-sport-pickleball/20 rounded-full blur-3xl animate-pulse-soft"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-sport-trampoline/20 rounded-full blur-3xl animate-pulse-soft" style={{animationDelay: '1s'}}></div>
         
         <div className="container mx-auto relative z-10">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+          <div className="max-w-3xl mx-auto text-center mb-16 reveal">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-primary/40 to-accent/40 text-primary text-sm font-medium mb-4">
               <span>Endless Possibilities</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-primary">Explore Our Activities</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">Explore Our Activities</h2>
             <p className="text-muted-foreground text-lg">
               Whatever your interests, we've got something that will excite and challenge you
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {activities.map((activity, index) => (
               <ActivityCard 
                 key={index}
@@ -130,32 +130,39 @@ const Index = () => {
       
       <Features />
       
-      {/* Gallery Section */}
+      {/* Gallery Section with enhanced animations */}
       <section id="gallery" className="section-padding relative overflow-hidden">
+        <div className="absolute -top-20 left-40 w-96 h-96 bg-sport-dance/30 rounded-full blur-3xl animate-pulse-soft" style={{animationDelay: '0.5s'}}></div>
+        <div className="absolute -bottom-20 right-40 w-96 h-96 bg-sport-food/30 rounded-full blur-3xl animate-pulse-soft" style={{animationDelay: '1.5s'}}></div>
+        
         <div className="container mx-auto relative z-10">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+          <div className="max-w-3xl mx-auto text-center mb-16 reveal">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-accent/40 to-primary/40 text-accent text-sm font-medium mb-4">
               <span>Capture The Excitement</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-primary">Gallery</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">Gallery</h2>
             <p className="text-muted-foreground text-lg">
               Take a visual tour of our facilities and see the excitement firsthand
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 reveal">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {activities.map((activity, index) => (
               <div 
                 key={index} 
-                className="relative group overflow-hidden rounded-lg aspect-square hover-scale"
+                className="relative group overflow-hidden rounded-lg aspect-square hover-scale reveal"
+                style={{ 
+                  transitionDelay: `${index * 0.1}s`,
+                  boxShadow: `0 10px 15px -3px ${activity.color}20`
+                }}
               >
                 <img 
                   src={activity.image} 
                   alt={activity.title} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-4 w-full">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="p-4 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className="text-white font-medium">{activity.title}</h3>
                   </div>
                 </div>
