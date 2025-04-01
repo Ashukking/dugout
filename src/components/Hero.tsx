@@ -41,7 +41,7 @@ const Hero = () => {
               {/* Main Image with colorful overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-sport-cricket/20 to-sport-dance/20 mix-blend-overlay"></div>
               <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" 
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
                 alt="Game Center Activities" 
                 className="w-full h-full object-cover"
               />

@@ -22,49 +22,49 @@ const Index = () => {
       description: "Professional indoor cricket pitches with automated bowling machines and scoring systems.",
       icon: <Trophy className="h-5 w-5 text-white" />,
       color: "#8B5CF6", // Vivid Purple
-      image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1527576539890-dfa815648363?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Pickle Ball Courts",
       description: "Multiple courts with professional equipment and coaching available for all skill levels.",
       icon: <Activity className="h-5 w-5 text-white" />,
       color: "#F97316", // Bright Orange
-      image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Football Field",
       description: "Indoor 5-a-side football pitches with artificial turf and professional lighting.",
       icon: <Dumbbell className="h-5 w-5 text-white" />,
       color: "#0EA5E9", // Ocean Blue
-      image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Trampoline Zone",
       description: "Interconnected trampolines for freestyle jumping, dodgeball, and fitness classes.",
       icon: <Activity className="h-5 w-5 text-white" />,
       color: "#D946EF", // Magenta Pink
-      image: "https://images.unsplash.com/photo-1595435934819-5842b2a76fd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Dance Floor",
       description: "State-of-the-art sound system and lighting for dance events and classes.",
       icon: <Music className="h-5 w-5 text-white" />,
       color: "#22C55E", // Bright Green
-      image: "https://images.unsplash.com/photo-1545128485-c400ce7b45d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Food Court",
       description: "Various food options from quick snacks to full meals, with healthy choices available.",
       icon: <Utensils className="h-5 w-5 text-white" />,
       color: "#EF4444", // Bright Red
-      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Steam Room",
       description: "Luxury steam rooms for relaxation and recovery after your activities.",
       icon: <Waves className="h-5 w-5 text-white" />,
       color: "#06B6D4", // Cyan Blue
-      image: "https://images.unsplash.com/photo-1525094998993-83c9302bd5e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1527576539890-dfa815648363?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
